@@ -15,7 +15,7 @@ public class App {
             float annualInterest = scanner.nextFloat();
             float montlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
 
-            System.out.println("Period (Years): ");
+            System.out.print("Period (Years): ");
             byte years = scanner.nextByte();
             int numberOfPayments = years * MONTHS_IN_YEAR;
 
@@ -26,6 +26,7 @@ public class App {
             String mortgageFormatted = 
             NumberFormat.getCurrencyInstance().format(mortgage);
 
+            System.out.println();
             System.out.println("Mortgage: " + mortgageFormatted);
         }
 
